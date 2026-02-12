@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h2>Expense Tracker</h2>
+
+    <form id="inputForm">
+      <label>Expense Name:</label>
+      <input type="text" id="expenseName" required>
+
+      <label>Amount:</label>
+      <input type="number" id="amount" required>
+
+      <label>Category:</label>
+      <select id="category">
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Shopping</option>
+        <option>Other</option>
+      </select>
+
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <hr>
+
+    <h3>Expense List</h3>
+    <div id="expenseList"></div>
+
+    <h3>Total Expense: ₹0</h3>
+    <p id="totalAmount"></p>
+
+  </div>
+</body>
+
+</html>
