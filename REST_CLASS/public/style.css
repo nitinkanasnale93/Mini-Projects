@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f2f6;
+}
+
+/* Page container */
+.page {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+}
+
+/* Create Button */
+.create-btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background: #6c5ce7;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* Posts container */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Avatar */
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #6c5ce7;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Content */
+.content {
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Button */
+.view-btn {
+  text-decoration: none;
+  color: #6c5ce7;
+  font-weight: bold;
+}
+
+.card {
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #ececff;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #6c5ce7;
+  font-weight: 500;
+}
+
+.view-btn:hover {
+  background: #dfe0ff;
+}
+
+.edit-btn {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #0984e3;
+  font-weight: 500;
+}
+
+.edit-btn:hover {
+  text-decoration: underline;
+}
+
+.textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+/* Form container */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input field */
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Textarea */
+.textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  min-height: 120px;
+  font-size: 14px;
+  resize: none;
+}
+
+/* Focus effect */
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: #6c5ce7;
+}
+
+/* Button improvement */
+.create-btn {
+  background: #6c5ce7;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background: #5a4bd1;
+}

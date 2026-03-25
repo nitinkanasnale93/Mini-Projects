@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="page">
+    <h2 class="title">Edit Post</h2>
+
+    <p><strong>ID:</strong> <%= post.id %></p>
+    <p><strong>User:</strong> @<%= post.username %></p>
+
+    <form method="POST" action="/posts/<%= post.id %>?_method=PATCH">
+        <textarea name="content" class="textarea"><%= post.content %></textarea>
+
+        <button class="create-btn">Update Post</button>
+    </form>
+</div>
+
+</body>
+</html>
